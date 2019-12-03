@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/css/global.min.css">
+    <title>MyApp - Settings</title>
+</head>
+<body>
+    <div class="dashboard-layout">
+        <header>
+            <h1>Dashboard</h1>
+            <div class="user">
+                <div class="user-thumb"></div>
+                Witaj, Ktośtam Skądśtam
+                <div class="user-dropdown">
+                    <ul>
+                        <li><a href="#">Moje konto</a></li>
+                        <li><a href="#">Wiadmości</a></li>
+                        <li><a href="#">Ustawienia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="logo">
+                <a href=""><span>My</span>App</a>
+            </div>
+            <ul>
+                <li>
+                    <a class="icon-info" href="#">Info</a>
+                </li>
+                <li>
+                    <a class="icon-users" href="./users.html">Użytkownicy</a>
+                </li>
+                <li>
+                    <a class="icon-comments" href="./comments.html">Komentarze</a>
+                </li>
+                <li>
+                    <a class="icon-gallery" href="./gallery.html">Galeria</a>
+                </li>
+                <li>
+                    <a class="icon-settings active" href="./settings.html">Ustawienia</a>
+                </li>
+                <li>
+                    <a href="../index.html">Wyloguj</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="settings">
+            <div class="settingsbar">
+                <ul>
+                    <li><a href="#profile">Profil</a></li>
+                    <li><a href="#account">Konto</a></li>
+                    <li><a href="#security">Bezpieczeństwo</a></li>
+                </ul>
+            </div>
+            <section id="profile">
+                <form action="">
+                    <h2>Ustawienia profilu</h2>
+                    <hr>
+                    <div class="settings-input-wrap">
+                        <label for="aboutme">Kilka słów o tobie:</label>
+                        <textarea id="aboutme" type="text" placeholder="Napisz tutaj coś o sobie" resize="none"></textarea>
+                    </div>
+                    <div class="settings-input-wrap">
+                        <label for="from">Skąd jesteś:</label>
+                        <input id="from" type="text" placeholder="Wpisz miejscowość lub województwo">
+                    </div>
+                    <div>
+                        <label>Twoja płeć:</label>
+                        <div class="settings-radio-wrap">
+                            <div>
+                                <input id="female" type="radio" value="female">
+                                <label for="female">Kobieta</label>
+                            </div>
+                            <div>
+                                <input id="male" type="radio" value="male">
+                                <label for="male">Mężczyzna</label>
+                            </div>
+                            <div>
+                                <input id="other" type="radio" value="other">
+                                <label for="other">Inna</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button" type="submit">Zapisz</button>
+                </form>
+            </section>
+            <section id="account">
+                <form action="GET">
+                    <h2>Ustawienia konta</h2>
+                </form>
+            </section>
+            <section id="security">
+                <form action="GET">
+                    <h2>Ustawienia zabezpieczeń</h2>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

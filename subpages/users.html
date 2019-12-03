@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/css/global.min.css">
+    <title>MyApp - Użytkownicy</title>
+</head>
+<body>
+    <div class="dashboard-layout">
+        <header>
+            <h1>Użytkownicy</h1>
+            <div class="user">
+                <div class="user-thumb"></div>
+                Witaj, Ktośtam Skądśtam
+                <div class="user-dropdown">
+                    <ul>
+                        <li><a href="#">Moje konto</a></li>
+                        <li><a href="#">Wiadmości</a></li>
+                        <li><a href="#">Ustawienia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="logo">
+                <a href=""><span>My</span>App</a>
+            </div>
+            <ul>
+                <li>
+                    <a class="icon-info" href="./dashboard.html">Info</a>
+                </li>
+                <li>
+                    <a class="icon-users active" href="#">Użytkownicy</a>
+                </li>
+                <li>
+                    <a class="icon-comments" href="./comments.html">Komentarze</a>
+                </li>
+                <li>
+                    <a class="icon-gallery" href="./gallery.html">Galeria</a>
+                </li>
+                <li>
+                    <a class="icon-settings" href="./settings.html">Ustawienia</a>
+                </li>
+                <li>
+                    <a href="../index.html">Wyloguj</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="users">
+            <div class="functionbar">
+                <a href="./addrow.html">Dodaj wpis</a>
+                <input type="text" size="32" placeholder="Wyszukaj">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>L.p.</td>
+                        <td>Imie</td>
+                        <td>Nazwisko</td>
+                        <td>Data dołączenia</td>
+                        <td>Akcje</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Jan</td>
+                        <td>Kowalski</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="1" class="tcheck" type="checkbox">
+                            <label for="1"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Agata</td>
+                        <td>Bednarska</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="2" class="tcheck" type="checkbox">
+                            <label for="2"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Michał</td>
+                        <td>Zając</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="3" class="tcheck" type="checkbox">
+                            <label for="3"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Bogdan</td>
+                        <td>Man</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="4" class="tcheck" type="checkbox">
+                            <label for="4"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Halina</td>
+                        <td>Malina</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="5" class="tcheck" type="checkbox">
+                            <label for="5"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Jan</td>
+                        <td>Kowalski</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="6" class="tcheck" type="checkbox">
+                            <label for="6"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Agata</td>
+                        <td>Bednarska</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="7" class="tcheck" type="checkbox">
+                            <label for="7"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Michał</td>
+                        <td>Zając</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="8" class="tcheck" type="checkbox">
+                            <label for="8"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Bogdan</td>
+                        <td>Man</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="9" class="tcheck" type="checkbox">
+                            <label for="9"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Halina</td>
+                        <td>Malina</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="10" class="tcheck" type="checkbox">
+                            <label for="10"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Jan</td>
+                        <td>Kowalski</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="11" class="tcheck" type="checkbox">
+                            <label for="11"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Agata</td>
+                        <td>Bednarska</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="12" class="tcheck" type="checkbox">
+                            <label for="12"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Michał</td>
+                        <td>Zając</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="13" class="tcheck" type="checkbox">
+                            <label for="13"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Bogdan</td>
+                        <td>Man</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="14" class="tcheck" type="checkbox">
+                            <label for="14"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Halina</td>
+                        <td>Malina</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="15" class="tcheck" type="checkbox">
+                            <label for="15"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Jan</td>
+                        <td>Kowalski</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="16" class="tcheck" type="checkbox">
+                            <label for="16"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Agata</td>
+                        <td>Bednarska</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="17" class="tcheck" type="checkbox">
+                            <label for="17"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Michał</td>
+                        <td>Zając</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="18" class="tcheck" type="checkbox">
+                            <label for="18"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Bogdan</td>
+                        <td>Man</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="19" class="tcheck" type="checkbox">
+                            <label for="19"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Halina</td>
+                        <td>Malina</td>
+                        <td>29.11.2019</td>
+                        <td>
+                            <input id="20" class="tcheck" type="checkbox">
+                            <label for="20"></label>
+                            <button class="tremove"></button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            <ul>
+                                <li><a class="pagall" href="#"></a></li>
+                                <li><a class="pagpage" href="#"></a></li>
+                                <li><a class="pagnumb active" href="#">1</a></li>
+                                <li><a class="pagnumb" href="#">2</a></li>
+                                <li><a class="pagnumb" href="#">3</a></li>
+                                <li><a class="pagpage" href="#"></a></li>
+                                <li><a class="pagall" href="#"></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
