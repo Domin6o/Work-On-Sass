@@ -29,7 +29,7 @@
             </div>
             <ul>
                 <li>
-                    <a class="icon-info" href="#">Info</a>
+                    <a class="icon-info" href="./dashboard.html">Info</a>
                 </li>
                 <li>
                     <a class="icon-users" href="./users.html">Użytkownicy</a>
@@ -41,7 +41,7 @@
                     <a class="icon-gallery" href="./gallery.html">Galeria</a>
                 </li>
                 <li>
-                    <a class="icon-settings active" href="./settings.html">Ustawienia</a>
+                    <a class="icon-settings active" href="#">Ustawienia</a>
                 </li>
                 <li>
                     <a href="../index.html">Wyloguj</a>
@@ -68,19 +68,23 @@
                         <label for="from">Skąd jesteś:</label>
                         <input id="from" type="text" placeholder="Wpisz miejscowość lub województwo">
                     </div>
+                    <div class="settings-input-wrap">
+                        <label for="born">Data urodzenia:</label>
+                        <input id="born" type="date">
+                    </div>
                     <div>
                         <label>Twoja płeć:</label>
                         <div class="settings-radio-wrap">
                             <div>
-                                <input id="female" type="radio" value="female">
+                                <input id="female" name="gender" type="radio" value="female">
                                 <label for="female">Kobieta</label>
                             </div>
                             <div>
-                                <input id="male" type="radio" value="male">
+                                <input id="male" name="gender" type="radio" value="male">
                                 <label for="male">Mężczyzna</label>
                             </div>
                             <div>
-                                <input id="other" type="radio" value="other">
+                                <input id="other" name="gender" type="radio" value="other">
                                 <label for="other">Inna</label>
                             </div>
                         </div>
@@ -91,11 +95,34 @@
             <section id="account">
                 <form action="GET">
                     <h2>Ustawienia konta</h2>
+                    <div>
+                        <label>Widoczność konta:</label>
+                        <div class="settings-radio-wrap">
+                            <div>
+                                <input id="public" name="visiblity" type="radio" value="public">
+                                <label for="public">Publiczne</label>
+                            </div>
+                            <div>
+                                <input id="private" name="visiblity" type="radio" value="private">
+                                <label for="private">Prywatne</label>
+                            </div>
+                            <div>
+                                <input id="firends" name="visiblity" type="radio" value="firends">
+                                <label for="firends">Znajomi</label>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </section>
             <section id="security">
                 <form action="GET">
                     <h2>Ustawienia zabezpieczeń</h2>
+                    <div class="settings-input-wrap">
+                        <label for="npass">Nowe hasło:</label>
+                        <input id="npass" type="password" placeholder="Wpisz tutaj nowe hasło">
+                        <label for="nrpass">Powtórz nowe hasło:</label>
+                        <input id="nrpass" type="password" placeholder="Wpisz nowe hasło ponownie">
+                    </div>
                 </form>
             </section>
         </main>
