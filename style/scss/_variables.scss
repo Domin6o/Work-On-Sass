@@ -1,0 +1,46 @@
+// zmiana domyślnej lokalizacji plików czcionek fontawsome
+$fa-font-path:         "../../fonts";
+// ../ oznacza lokalizację folder wyżej
+// czyli "../../fonts" oznacza: - przejdź folder wyżej (z "css" do "style")
+//                              - przejdź folder wyżej (z "style" do "./" - folderu projektu)
+//                              - i wejdź do folderu "fonts" ("./fonts")
+// i dlatego tylko dwa "../", bo skompilowane pliki są w folderze "./style/css"
+// a nie jak pliki źródłowe sass w folderze "./style/scss/fontawsome"
+
+//colors
+$background-light: #eee;
+$light-grey: #ccc;
+$dark-grey: #444;
+$dark-blue: #11b;
+
+//radius
+$radius: 5px;
+
+//transitions duration
+$transition-time: 0.25s;
+
+// dodawanie ikonki do elementu
+@mixin icon($icon-code, $position: before, $margin: 10px, $icon-style: ".fas") {
+    @if $position == before {
+        &::before {
+            @extend #{$icon-style};
+            @extend %fa-icon;
+    
+            content: fa-content($icon-code);
+            margin-right: $margin;
+        }
+    }
+    @else {
+        &::after {
+            @extend #{$icon-style};
+            @extend %fa-icon;
+    
+            content: fa-content($icon-code);
+            margin-left: $margin;
+        }
+    }
+}
+
+@mixin shadow($size: 10px, $color: rgba(0, 0, 0, 0.15)) {
+    box-shadow: 0 0 $size $color;
+}

@@ -1,0 +1,31 @@
+main.gallery {
+    display: grid;
+    grid-template: repeat(4,  1fr) / repeat(4, 1fr);
+    gap: 10px;
+    margin: 10px;
+    
+    & > div {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border-radius: $radius;
+        background-color: lighten($dark-blue, 30%);
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+            border-radius: $radius;
+            pointer-events: none;
+        }
+
+        &:hover img {
+            position: fixed;
+            top: calc(50vh / 2);
+            left: calc(50vw / 2);
+            height: 50vh;
+            width: 50vw;
+            z-index: 10;
+        }
+    }
+}

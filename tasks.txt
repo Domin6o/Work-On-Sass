@@ -1,0 +1,25 @@
+~~ STRONA DASHBOARD ~~
+pierwszy wiersz:	2 kafelki (1 o długości 2)
+drugi wiersz:		3 kafelki
+
+każdy kafelek podlinkowany do odpowiedniej strony
+te same linki na liście po lewej
+:hover dla kafelków
+
+> Użytkownicy:
+- przycisk dodaj przenoszący do formularza "dodającego" pozycje
+- pole wyszukiwania
+- lista z użytkownikami
+- łatwe dodawanie pozycji (użycie klass w stylach)
+- ikona zaznaczania i usuwania po prawej stronie pozycji
+- paginacja umieszczona na stałe nadole strony z listą
+
+> Ustawinia:
+- najlepiej wiele formularzy
+
+> Inne wymyślone kafelki (np. komentarze)
+
+
+~~ STRONA STARTOWA / LOGOWANIA ~~
+- link "zapomniałem hasła" przenoszący do formularza
+- link przenoszący do rejestracji

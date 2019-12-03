@@ -1,0 +1,43 @@
+.login-layout {
+    display: grid;
+    grid-template: 100px auto / repeat(6, 1fr);
+    grid-template-areas:
+        ". . . . . ."
+        ". . form form . .";
+    
+    height: 100%;
+    width: 100%;
+    align-items: start;
+
+    .login-form {
+        grid-area: form;
+        height: auto;
+        background-color: white;
+        border: 1px solid $light-grey;
+        border-radius: $radius;
+        padding: 20px;
+        @include shadow(30px);
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    //wybranie labela na zasadzie wyboru sąsiedniego dziecka przy pomocy selektora +
+    input[type="checkbox"] + label {
+        @include icon($fa-var-square);
+    }
+
+    input[type="checkbox"]:checked + label {
+        @include icon($fa-var-check-square);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .login-layout {
+        grid-template: 40px auto / repeat(6, 1fr);
+        grid-template-areas:
+            ". . . . . ."
+            ". form form form form .";
+    }
+}

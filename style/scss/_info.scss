@@ -1,0 +1,68 @@
+main.info {
+    display: grid;
+    grid-template: auto auto / repeat(3, 1fr);
+    grid-template-areas:
+        "info info users"
+        "comments gallery settings";
+    
+    div {
+        margin: 10px;
+        padding: 10px;
+        border-radius: $radius;
+        background-color: $light-grey;
+        transition: color $transition-time;
+        transition: background-color $transition-time;
+
+        a {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+        }
+
+        h2 {
+            margin: 10px;
+            border-bottom: 1px solid $dark-grey;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: right;
+
+            &:before {
+                float: left;
+            }
+        }
+
+        p {
+            margin: 10px 0;
+
+            span {
+                float: right;
+                font-weight: bold;
+            }
+        }
+
+        &.dash-info {
+            grid-area: info;
+        }
+    
+        &.dash-users {
+            grid-area: users;
+        }
+    
+        &.dash-comments {
+            grid-area: comments;
+        }
+    
+        &.dash-gallery {
+            grid-area: gallery;
+        }
+    
+        &.dash-settings {
+            grid-area: settings;
+        }
+
+        &:hover {
+            color: $light-grey;
+            background-color: lighten($dark-blue, 30%);
+        }
+    }
+}

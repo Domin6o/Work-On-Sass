@@ -1,0 +1,122 @@
+main.users {
+
+    position: relative;
+    width: 100%;
+
+    .functionbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+
+        a {
+            padding: 5px 10px;
+            border: 1px solid $dark-grey;
+            border-radius: $radius;
+            background-color: $light-grey;
+            @include shadow(5px, lighten($dark-grey, 15%));
+        }
+
+        input {
+            border-radius: $radius;
+        }
+    }
+
+    table {
+        width: 100%;
+        table-layout: inset;
+        border-collapse: collapse;
+
+        thead {
+            td {
+                border-top: none;
+                font-weight: bold;
+            }
+
+            background-color: $dark-grey;
+            color: $light-grey;
+        }
+
+        td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        td:first-of-type {
+            border-left: none;
+            text-align: right;
+        }
+
+        td:last-of-type {
+            border-right: none;
+        }
+
+        tr:last-of-type {
+            td {
+                border-bottom: none;
+            }
+        }
+
+        tfoot {
+            ul {
+                display: flex;
+                justify-content: flex-start;
+                padding: 0;
+                list-style-type: none;
+    
+                li {
+                    a {
+                        display: inline-block;
+                        height: 30px;
+                        width: 30px;
+                        margin: 5px;
+                        border: 1px solid $dark-grey;
+                        border-radius: $radius;
+                        background-color: $light-grey;
+                        text-align: center;
+                        font-weight: bold;
+                        line-height: 30px;
+                        @include shadow(5px, lighten($dark-grey, 15%));
+                    }
+    
+                    &:first-of-type a, &:last-of-type a {
+                        @include icon($fa-var-angle-double-left, "before", 0);
+                    }
+    
+                    &:nth-of-type(2) a, &:nth-last-of-type(2) a {
+                        @include icon($fa-var-angle-left, "before", 0);
+                    }
+    
+                    &:last-of-type, &:nth-last-of-type(2) {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tcheck {
+    display: none;
+
+    //wybranie labela na zasadzie wyboru sąsiedniego dziecka przy pomocy selektora +
+    & + label {
+        margin: 0 5px;
+        @include icon($fa-var-square, "before", 10px, ".far");
+    }
+
+    &:checked + label {
+        @include icon($fa-var-check-square, "before", 10px, ".far");
+    }
+}
+
+.tremove {
+    margin: 0 5px;
+    border: none;
+    background-color: none;
+    color: $dark-grey;
+    @include icon($fa-var-trash-alt, "after", -10px);
+
+    &:active {
+        color: red;
+    }
+}

@@ -1,0 +1,30 @@
+.form-input-wrap {
+    display: block;
+    width: 100%;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid $light-grey;
+        border-radius: $radius;
+        background-color: white;
+        box-sizing: border-box;
+
+        transition: all $transition-time;
+
+        &:hover {
+            border-color: $dark-blue;
+        }
+
+        &:focus {
+            @include shadow(10px, lighten($dark-blue, 20%));
+        }
+    }
+}

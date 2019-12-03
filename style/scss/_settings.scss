@@ -1,0 +1,76 @@
+main.settings {
+
+    div.settingsbar {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            list-style-type: none;
+
+            li a {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 10px;
+                border: 1px solid $dark-grey;
+                border-left: none;
+                border-right: none;
+                background-color: $background-light;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+
+    section {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid $light-grey;
+
+        form {
+            h2 {
+                margin: 5px 0 0 10px;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            div.settings-input-wrap {
+                @extend .form-input-wrap;
+
+                label {
+                    font-size: 20px;
+                }
+            
+                input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+                    margin-bottom: 10px;
+                    padding: 5px;
+                }
+            
+                textarea {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding: 5px;
+                    border: 1px solid $light-grey;
+                    border-radius: $radius;
+                    background-color: white;
+                    box-sizing: border-box;
+            
+                    transition: all $transition-time;
+            
+                    &:hover {
+                        border-color: $dark-blue;
+                    }
+            
+                    &:focus {
+                        @include shadow(10px, lighten($dark-blue, 20%));
+                    }
+                }
+            }
+
+            div.settings-radio-wrap {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
